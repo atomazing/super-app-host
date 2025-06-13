@@ -3,6 +3,24 @@
 	"version": "0.0.4",
 	"description": "Host app",
 	"type": "module",
+	"author": "whoisYeshua + MarkSinD",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/atomazing/super-app-host"
+	},
+	"bugs": {
+		"url": "https://github.com/atomazing/super-app-host"
+	},
+	"homepage": "https://github.com/atomazing/super-app-host",
+	"keywords": [
+		"host",
+		"super-app",
+		"atomazing"
+	],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
 	"files": [
 		"dist"
 	],
