@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" style="height: 100%">
+	<head>
+		<title>Host</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+		<meta name="color-scheme" content="dark light" />
+		<!-- scripts -->
+		<script type="importmap">
+			{
+				"imports": {
+					"react": "./deps/dev/react.js",
+					"react/jsx-runtime": "./deps/dev/jsx-runtime.js",
+					"react-dom": "./deps/dev/react-dom.js",
+					"react-dom/client": "./deps/dev/react-dom-client.js",
+					"scheduler": "./deps/dev/scheduler.js"
+				}
+			}
+		</script>
+		<link rel="modulepreload" href="./deps/dev/jsx-runtime.js" />
+		<link rel="modulepreload" href="./deps/dev/react.js" />
+		<link rel="modulepreload" href="./deps/dev/react-dom-client.js" />
+		<link rel="modulepreload" href="./deps/dev/react-dom.js" />
+		<link rel="modulepreload" href="./deps/dev/scheduler.js" />
+		<script src="./src/index.tsx" type="module"></script>
+	</head>
+	<body style="height: 100%">
+		<div id="app" style="height: 100%"></div>
+	</body>
+</html>

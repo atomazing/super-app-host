@@ -1,0 +1,9 @@
+{
+	"extends": "@atomazing-org/tsconfig/tsconfig.node.json",
+	"compilerOptions": {
+		"composite": true,
+		"noEmit": false,
+		"emitDeclarationOnly": true
+	},
+	"include": ["vite.config.ts"]
+}

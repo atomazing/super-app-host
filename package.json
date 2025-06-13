@@ -1,0 +1,50 @@
+{
+	"name": "@atomazing-org/super-app-host",
+	"version": "0.0.3",
+	"description": "Host app",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"build:dev-release": "vite build --mode dev-release",
+		"preview": "vite preview",
+		"preview:watch": "concurrently \"vite preview -l silent\" \"vite build --watch\"",
+		"format": "npm run format:eslint && npm run format:prettier",
+		"format:eslint": "npm run lint:eslint -- --fix",
+		"format:prettier": "npm run lint:prettier -- --write",
+		"lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:ts",
+		"lint:eslint": "eslint \"**/*.{js,ts,tsx}\"",
+		"lint:prettier": "prettier \"**/*.{json,js,ts,tsx}\" --check --ignore-path ../.prettierignore",
+		"lint:ts": "tsc --noEmit",
+		"clean": "rimraf dist node_modules",
+		"debug:eslint": "eslint --print-config \"./src/index.ts\" > eslint-output-config.json",
+		"debug:prettier": "prettier \"./src/index.ts\" --loglevel debug --ignore-path ../.prettierignore",
+		"debug:ts": "tsc --showConfig",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"@atomazing-org/vite-config": "latest"
+	},
+	"devDependencies": {
+		"@atomazing-org/eslint-config": "1.1.0",
+		"@atomazing-org/tsconfig": "latest",
+		"@atomazing-org/telegram-web-app": "latest",
+		"@types/react": "18.3.14",
+		"@types/react-dom": "18.3.2",
+		"@vitejs/plugin-react": "4.3.4",
+		"concurrently": "9.1.1",
+		"vite": "6.3.4",
+		"vite-plugin-externalize-dependencies": "1.0.1",
+		"vite-tsconfig-paths": "5.1.4"
+	},
+	"packageManager": "npm@10.9.0",
+	"engines": {
+		"node": ">=22.11",
+		"npm": ">=10"
+	}
+}

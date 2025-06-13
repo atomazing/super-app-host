@@ -1,0 +1,13 @@
+{
+	"extends": "@atomazing-org/tsconfig/tsconfig.base.json",
+	"compilerOptions": {
+		/* Project Specific */
+		"baseUrl": "src",
+		"paths": {
+			"$*": ["*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["public"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+}
