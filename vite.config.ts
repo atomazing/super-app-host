@@ -1,4 +1,4 @@
-import {  } from '@atomazing-org/vite-config/constants'
+import { EXTERNAL_DEPS } from '@atomazing-org/vite-config/constants'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import externalize from 'vite-plugin-externalize-dependencies'
