@@ -29,10 +29,7 @@ export default defineConfig({
 		externalize({ externals: EXTERNAL_DEPS }),
 		replacePathsPlugin(),
 	],
-	esbuild: {
-		target: 'esnext',
-		jsxDev: false,
-	},
+	esbuild: { jsxDev: false },
 	build: {
 		target: 'esnext',
 		minify: false,
