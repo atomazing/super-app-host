@@ -30,6 +30,7 @@ export default defineConfig({
 		replacePathsPlugin(),
 	],
 	esbuild: { jsxDev: false },
+	optimizeDeps: { esbuildOptions: { target: 'esnext' } },
 	build: {
 		target: 'esnext',
 		minify: false,

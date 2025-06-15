@@ -1,5 +1,5 @@
-import { Telegram } from '@atomazing-org/telegram-web-app'
 import { MODULE_ENTRYPOINT } from '@atomazing-org/vite-config/constants'
+import { Telegram } from '@atomazing-org/telegram-web-app'
 
 import { DynamicModule } from '$utils'
 

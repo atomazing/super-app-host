@@ -6,7 +6,7 @@ import { ErrorBoundaryContext } from './ErrorBoundaryContext'
 
 import type { ErrorInfo, ReactNode, ComponentType, ReactElement } from 'react'
 
-type FallbackProps = {
+interface FallbackProps {
 	error: any
 	resetErrorBoundary: (...args: any[]) => void
 }

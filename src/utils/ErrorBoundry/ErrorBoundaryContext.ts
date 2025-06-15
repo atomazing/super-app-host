@@ -3,7 +3,7 @@ import { createContext } from 'react'
 
 import { useSafeContext } from '../useSafeContext'
 
-type ErrorBoundaryContextType = {
+interface ErrorBoundaryContextType {
 	didCatch: boolean
 	error: any
 	resetErrorBoundary: (...args: any[]) => void
